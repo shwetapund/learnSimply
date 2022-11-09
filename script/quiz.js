@@ -5,7 +5,7 @@ const quizData = [
         b: "<pre>",
         c: "<hr>",
         d: "<a>",
-        correct: "a",
+        correct: "a"
     },
 
     {
@@ -14,7 +14,7 @@ const quizData = [
         b: "Tim Berners-Lee",
         c: "Brendan Eich",
         d: "Sergey Brin",
-        correct: "b",
+        correct: "b"
     },
 
     {
@@ -23,7 +23,7 @@ const quizData = [
         b: "HyperText Machine Language",
         c: "HyperText Marking Language",
         d: "HighText Marking Language",
-        correct: "b",
+        correct: "b"
     },
 
     {
@@ -32,7 +32,7 @@ const quizData = [
         b: "<doctype html>",
         c: "<doctype html!>",
         d: "<!doctype html>",
-        correct: "d",
+        correct: "d"
     },
 
     {
@@ -41,7 +41,7 @@ const quizData = [
         b: "<h1>",
         c: "<h6>",
         d: "heading",
-        correct: "b",
+        correct: "b"
     },
 
     {
@@ -50,7 +50,7 @@ const quizData = [
         b: "title tag",
         c: "html tag",
         d: "body tag",
-        correct: "a",
+        correct: "a"
     },
 
     {
@@ -59,7 +59,7 @@ const quizData = [
         b: "<mark>",
         c: "<highlight>",
         d: "<b>",
-        correct: "b",
+        correct: "b"
     },
 
     {
@@ -77,7 +77,7 @@ const quizData = [
         b: "<!……>",
         c: "</……/>",
         d: "<…….!>",
-        correct: "b",
+        correct: "b"
     },
 
     {

@@ -24,10 +24,10 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 1rem 1rem -0.7 rgba(0, 0, 0, 0.4);
-    width: 600px;
+    width: 700px;
     max-width: 95vw;
     overflow: hidden;
-    margin-top: 5rem;
+
 }
 
 .quiz-header {
