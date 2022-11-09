@@ -1,11 +1,11 @@
-const quizDB = [
+const quizData = [
     {
-        question: "1. What is HTML?",
-        a: "HTML describes the structure of a webpage",
-        b: "HTML is the standard markup language mainly used to create web pages",
-        c: "HTML consists of a set of elements that helps the browser how to view the content",
-        d: "All of the mentioned",
-        ans: "ans4"
+        question: "1.Among the following, which is the HTML paragraph tag?",
+        a: "<p>",
+        b: "<pre>",
+        c: "<hr>",
+        d: "<a>",
+        correct: "a",
     },
 
     {
@@ -14,7 +14,7 @@ const quizDB = [
         b: "Tim Berners-Lee",
         c: "Brendan Eich",
         d: "Sergey Brin",
-        ans: "ans2"
+        correct: "b",
     },
 
     {
@@ -23,7 +23,7 @@ const quizDB = [
         b: "HyperText Machine Language",
         c: "HyperText Marking Language",
         d: "HighText Marking Language",
-        ans: "ans2"
+        correct: "b",
     },
 
     {
@@ -32,7 +32,7 @@ const quizDB = [
         b: "<doctype html>",
         c: "<doctype html!>",
         d: "<!doctype html>",
-        ans: "ans4"
+        correct: "d",
     },
 
     {
@@ -41,7 +41,7 @@ const quizDB = [
         b: "<h1>",
         c: "<h6>",
         d: "heading",
-        ans: "ans2"
+        correct: "b",
     },
 
     {
@@ -50,7 +50,7 @@ const quizDB = [
         b: "title tag",
         c: "html tag",
         d: "body tag",
-        ans: "ans1"
+        correct: "a",
     },
 
     {
@@ -59,7 +59,7 @@ const quizDB = [
         b: "<mark>",
         c: "<highlight>",
         d: "<b>",
-        ans: "ans2"
+        correct: "b",
     },
 
     {
@@ -68,7 +68,7 @@ const quizDB = [
         b: "<video>",
         c: "<slider>",
         d: "<source>",
-        ans: "ans3"
+        correct: "c",
     },
 
     {
@@ -77,7 +77,7 @@ const quizDB = [
         b: "<!……>",
         c: "</……/>",
         d: "<…….!>",
-        ans: "ans2"
+        correct: "b",
     },
 
     {
@@ -86,54 +86,51 @@ const quizDB = [
         b: " jQuery",
         c: "JavaScript",
         d: "PHP",
-        ans: "ans1"
+        correct: "a",
     },
 
 ];
-const question = document.querySelector('.question');
-const option1 = document.querySelector('#option1');
-const option2 = document.querySelector('#option2');
-const option3 = document.querySelector('#option3');
-const option4 = document.querySelector('#option4');
-const submit = document.querySelector('#submit');
-
-const answers = document.querySelectorAll('.answer');
-
-let questionCount = 0;
+const quiz = document.getElementById("quiz");
+const answerElements = document.querySelectorAll(".answer");
+const questionElement = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const submitButton = document.getElementById("submit");
+let currentQuiz = 0;
 let score = 0;
-const loadQuestion = () => {
-    const questionList = quizDB[questionCount];
-    question.innerHTML = quizDB[questionCount].question;
-
-    option1.innerText = questionList.a
-    option2.innerText = questionList.b
-    option3.innerText = questionList.c
-    option4.innerText = questionList.d
-}
-
-loadQuestion();
-const getCheckAnswer = () => {
+const deselectAnswers = () => {
+    answerElements.forEach((answer) => (answer.checked = false));
+};
+const getSelected = () => {
     let answer;
-    answer.forEach((curAnsElem) => {
-        if (curAnsElem.checked) {
-            answer = curAnsElem.id;
-        }
+    answerElements.forEach((answerElement) => {
+        if (answerElement.checked) answer = answerElement.id;
     });
     return answer;
 };
-submit.addEventListener('click', () => {
-    const checkedAnswer = getCheckAnswer();
-    console.log(checkedAnswer);
-
-    if(checkedAnswer === quizDB[questionCount].ans){
-        score++;
-    };
-    questionCount++;
-
-    if(questionCount < quizDB.length){
-        loadQuestion();
-    }else{
-
+const loadQuiz = () => {
+    deselectAnswers();
+    const currentQuizData = quizData[currentQuiz];
+    questionElement.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+};
+loadQuiz();
+submitButton.addEventListener("click", () => {
+    const answer = getSelected();
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) score++;
+        currentQuiz++;
+        if (currentQuiz < quizData.length) loadQuiz();
+        else {
+            quiz.innerHTML = `
+<h2>You Score ${score}/${quizData.length} 🥳✌🏻</h2>
+<button onclick="history.go(0)">Play Again</button>
+` // location.reload() won't work in CodePen for security reasons;
+        }
     }
-
 });
