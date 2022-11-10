@@ -23,7 +23,7 @@ const quizData = [
         b: "HyperText Machine Language",
         c: "HyperText Marking Language",
         d: "HighText Marking Language",
-        correct: "b"
+        correct: "a"
     },
 
     {
@@ -133,4 +133,5 @@ submitButton.addEventListener("click", () => {
 ` // location.reload() won't work in CodePen for security reasons;
         }
     }
+    
 });
