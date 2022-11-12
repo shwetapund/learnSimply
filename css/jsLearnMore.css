@@ -15,6 +15,7 @@
     font-size: 25px;
 }
 .top-btn:hover{
-    box-shadow: 0 0 10px 3px #ffcc00;
+    box-shadow: 0 0 10px 3px gray;
     cursor: pointer;
+    color: #000;
 }
