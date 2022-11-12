@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body{
+    background-color: hsl(206, 92%, 94%);
+}
+
+.home-img{
+    box-shadow: 0 0 10px 1px #ffcc00;
 }
 
 .img{
@@ -11,6 +19,10 @@
 .icon{
     width: 35px;
     margin-top: 0;
+}
+
+.icon1{
+    width: 45px;
 }
 .footer {
     color: white;
