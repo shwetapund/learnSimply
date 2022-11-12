@@ -13,6 +13,13 @@ body{
     align-items: center;
 }
 
+.maindiv h1{
+    padding: 25px;
+    font-size: 70px;
+    margin-left: 30vw;
+}
+
+
 .maindivB{
     display: flex;
     padding: 10px ;
@@ -75,7 +82,7 @@ body{
 }
 
 .hover-content p{
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 500;
     margin-bottom: 20px;
     transform: translateY(50px);
@@ -104,16 +111,16 @@ body{
 }
 
 .hover-content h2{
-    padding: 10px;
+    padding: 6px;
 }
 
 .card-body{
     position: absolute;
-    bottom: 31px;
+    bottom: 35px;
     left:49%;
-    margin: 5px;
     transform:translateX(-50%);
     text-align: center;
+    margin-bottom: -16px;
 }
 
 .card-body h4{
@@ -122,6 +129,12 @@ body{
 }
 
 .card-body p{
+    margin-top: -10px;
     font-size:18px ;
     color: #141414;
+}
+
+.hover-content a{
+    text-decoration: none;
+    color: antiquewhite;
 }
