@@ -68,8 +68,7 @@
     margin-left: 18px;
     border-radius: 10px;
 }
-
-.btn:hover {
+.btn:hover{
     height: 52px;
     width: 352px;
     box-shadow: 2px 2px 2px gray;
