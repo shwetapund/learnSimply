@@ -99,7 +99,7 @@ const quizData = [
     },
         
     {
-        question:"10.Which of the following is the use of strpos() function in PHP?"
+        question:"10.Which of the following is the use of strpos() function in PHP?",
         
         a: "The strpos() function is used to search for the spaces in a string",
         b: "The strpos() function is used to search for a number in a string",
