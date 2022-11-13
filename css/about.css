@@ -85,10 +85,6 @@ body{
     position: absolute;
     inset:0;
     /* background: #000000ee; */
-
-    background: #2770a8;
-    color:black;
-
     background-color: #00ccff;
     color: black;
     box-shadow: 0px 0px 10px 2px #ffcc00;
@@ -172,7 +168,7 @@ body{
 
 }
 .rtc-container{
-    text-align: center;
+   text-align: center;
 }
 .rtc-para,p{
     padding: 10px;
@@ -180,3 +176,4 @@ body{
      text-align: center;
      font-weight: bold;
 }
+
