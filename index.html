@@ -12,7 +12,7 @@
 
 <body>
   <!--navbar-->
-  <nav class="navbar navbar-expand-lg bg-info shadow b">
+  <nav class="navbar navbar-expand-lg bg-info shadow " id="navbar">
     <div class="container-fluid ">
       <a class="navbar-brand fs-4 " href="#"> <img src="./assest/learn-icon.png" class="icon"> <em>LearnSimply</em></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#nav">Home</a>
+            <a class="nav-link active" aria-current="page" href="#heading">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="./pages/about.html">Team</a>
@@ -43,7 +43,7 @@
   </nav>
   <!--Heading-->
   
-    <div class="row d-flex justify-content-center mt-5 ms-3 me-3 ">
+    <div class="row d-flex justify-content-center mt-5 ms-3 me-3 " id="heading">
         <div class="col-lg-6 col-md-12 ">
             <img src="./assest/quizapp-img.png" class="img-thumbnail border-0 rounded shadow ">
         </div>
@@ -70,7 +70,7 @@
         for documents designed to be displayed in a web browser. It can be assisted by
         technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
       <a href="./pages/htmlLearnMore.html" class="btn btn-info"> See More</a>
-      <a href="./pages/quiz.html" class="btn btn-warning ms-2">Quiz</a>
+      <a href="./pages/html-quiz.html" class="btn btn-warning ms-2">Quiz</a>
     </div>
 
 
@@ -81,13 +81,13 @@
         describing the presentation of a document written in a markup language such as HTML or XML. CSS is a
         cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
       <a href="./pages/cssLearnMore.html" class="btn btn-info">See More</a>
-      <a href="./pages/quiz1.html" class="btn btn-warning ms-2">Quiz</a>
+      <a href="./pages/css-quiz1.html" class="btn btn-warning ms-2">Quiz</a>
     </div>
 
 
   </div>
 
-  <div class=" d-flex justify-content-around m-4  row ">
+  <div class=" d-flex justify-content-around m-5  row ">
 
 
     <div class=" home-img p-4  rounded bg-white" style="width: 35rem ; margin: 1rem;">
@@ -97,7 +97,7 @@
         client side for
         webpage behavior, often incorporating third-party libraries.</p>
       <a href="./pages/jsLearnMore.html" class="btn btn-info">See More</a>
-      <a href="./pages/quiz2.html" class="btn btn-warning ms-2">Quiz</a>
+      <a href="./pages/js-quiz2.html" class="btn btn-warning ms-2">Quiz</a>
     </div>
 
 
@@ -108,7 +108,32 @@
         front-end web development. It contains HTML, CSS and JavaScript-based design templates for
         typography, forms, buttons, navigation, and other interface components.</p>
       <a href="./pages/bsLearnMore.html" class="btn btn-info">See More</a>
-      <a href="./pages/quiz3.html" class="btn btn-warning ms-2">Quiz</a>
+      <a href="./pages/bootstrap-quiz3.html" class="btn btn-warning ms-2">Quiz</a>
+    </div>
+
+
+  </div>
+
+  <div class=" d-flex justify-content-around m-5 row ">
+
+
+    <div class=" home-img p-4  rounded bg-white" style="width: 35rem ; margin: 1rem;">
+      <h3 class="card-title"><img src="./assest/cpp-img.png" alt="html-img" class="img">CPP</h3>
+      <p class="card-text">C++ is a high-level general-purpose programming language 
+        created by Danish computer scientist Bjarne Stroustrup as an extension of the 
+        C programming language, or "C with Classes".</p>
+      <a href="./pages/cppLearnMore.html" class="btn btn-info"> See More</a>
+      <a href="./pages/cpp-quiz4.html" class="btn btn-warning ms-2">Quiz</a>
+    </div>
+
+
+
+    <div class=" home-img p-4  rounded bg-white" style="width: 35rem ; margin: 1rem;">
+      <h3 class="card-title"><img src="./assest/php-img.png" alt="html-img" class="img me-1">PHP</h3>
+      <p class="card-text">PHP is a general-purpose scripting language geared toward web development. 
+        It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. </p>
+      <a href="./pages/phpLearnMore.html" class="btn btn-info">See More</a>
+      <a href="./pages/php-quiz5.html" class="btn btn-warning ms-2">Quiz</a>
     </div>
 
 
@@ -141,13 +166,17 @@
           <h2>Learn Simply</h2>
           <br>
           <div class="sub-links">
-            <a href="./pages/quiz.html">HTML Quiz</a>
+            <a href="./pages/html-quiz.html">HTML Quiz</a>
             <br>
-            <a href="./pages/quiz1.html">CSS Quiz</a>
+            <a href="./pages/css-quiz1.html">CSS Quiz</a>
             <br>
-            <a href="./pages/quiz2.html">JS Quiz</a>
+            <a href="./pages/js-quiz2.html">JS Quiz</a>
             <br>
-            <a href="./pages/quiz3.html">Bootstrap Quiz</a>
+            <a href="./pages/bootstrap-quiz3.html">Bootstrap Quiz</a>
+            <br>
+            <a href="./pages/cpp-quiz4.html">Cpp Quiz</a>
+            <br>
+            <a href="./pages/php-quiz5.html">php Quiz</a>
 
           </div>
         </div>
@@ -180,6 +209,9 @@
     </div>
 
   </div>
+  <a href="#navbar" class="top-btn">
+    <i class="fa-sharp fa-solid fa-arrow-up"></i>
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
