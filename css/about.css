@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: hsl(206, 92%, 94%);;;
+    background-color: hsl(206, 92%, 94%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -35,23 +35,31 @@ body{
 
 .maindivB{
     display: flex;
-    padding: 10px ;
+    padding: 50px ;
     margin: 52px;
 }
 
 .maindivA{
     display: flex;
-    padding: 10px ;
+    padding: 50px ;
     margin: 52px;
-    
-
 }
 
-
+.maindiv h1{
+    margin-left: 10px;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
 .profile-card{
     position: relative;
+
+    min-width: 200px;
+    height: 600px;
+
     min-width: 450px;
     height: 580px;
+
     overflow: hidden;
     padding: 10px;
 }
@@ -79,9 +87,14 @@ body{
     position: absolute;
     inset:0;
     /* background: #000000ee; */
+
+    background: #2770a8;
+    color:black;
+
     background-color: #00ccff;
     color: black;
     box-shadow: 0px 0px 10px 2px #ffcc00;
+
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -126,16 +139,17 @@ body{
 }
 
 .hover-content h2{
-    padding: 10px;
+    padding: 7px;
 }
 
 .card-body{
     position: absolute;
-    bottom: 31px;
+    bottom: 15px;
     left:49%;
     margin: 5px;
     transform:translateX(-50%);
     text-align: center;
+    margin-bottom: -10px;
 }
 
 .card-body h4{
@@ -146,4 +160,9 @@ body{
 .card-body p{
     font-size:18px ;
     color: #141414;
+}
+
+.social-link a{
+    text-decoration: none;
+    color:black;
 }
